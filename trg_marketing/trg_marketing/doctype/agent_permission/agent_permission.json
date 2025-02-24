@@ -1,0 +1,24 @@
+{
+    "name": "Agent Permission",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "permission_type",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "label": "Permission Type",
+            "reqd": 1,
+            "options": "\nAdmin\nCall Center Manager\nHR\nQuality Control\nConfirmation\nAgent Training\nSubmit New Leads\nChange Agent of a Lead\nChange Source of a Lead\nView Appointment History"
+        },
+        {
+            "fieldname": "granted_on",
+            "fieldtype": "Datetime",
+            "in_list_view": 1,
+            "label": "Granted On",
+            "read_only": 1,
+            "default": "now"
+        }
+    ]
+}

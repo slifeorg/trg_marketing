@@ -1,0 +1,32 @@
+{
+  "name": "Property Details",
+  "doctype": "DocType",
+  "module": "Trg Marketing",
+  "fields": [
+    {
+      "fieldname": "zillow_data",
+      "label": "Zillow API Response",
+      "fieldtype": "Long Text"
+    },
+    {
+      "fieldname": "year_built",
+      "label": "Year Built",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "lead",
+      "label": "Lead",
+      "fieldtype": "Link",
+      "options": "Lead"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

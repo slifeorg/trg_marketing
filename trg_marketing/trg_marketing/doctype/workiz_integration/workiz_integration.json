@@ -1,0 +1,36 @@
+{
+  "name": "Workiz Integration",
+  "doctype": "DocType",
+  "module": "Trg Marketing",
+  "extends": "Base Integration",
+  "fields": [
+    {
+      "fieldname": "workiz_uuid",
+      "label": "Workiz UUID",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "lead",
+      "label": "Lead",
+      "fieldtype": "Link",
+      "options": "Lead",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Sales Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ]
+}

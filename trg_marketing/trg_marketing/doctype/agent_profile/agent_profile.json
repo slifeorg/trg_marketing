@@ -1,0 +1,71 @@
+{
+    "name": "Agent Profile",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "autoname": "format:AGTP-{####}",
+    "search_fields": "first_name,last_name,email,phone_number",
+    "title_field": "full_name",
+    "show_title_field_in_link": 1,
+    "fields": [
+        {
+            "fieldname": "first_name",
+            "fieldtype": "Data",
+            "label": "First Name",
+            "reqd": 1,
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "last_name",
+            "fieldtype": "Data",
+            "label": "Last Name",
+            "reqd": 1,
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "full_name",
+            "fieldtype": "Data",
+            "label": "Full Name",
+            "read_only": 1,
+            "in_global_search": 1
+        },
+        {
+            "fieldname": "phone_number",
+            "fieldtype": "Phone",
+            "label": "Phone Number",
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "email",
+            "fieldtype": "Data",
+            "label": "Email",
+            "options": "Email",
+            "unique": 1,
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "position",
+            "fieldtype": "Select",
+            "label": "Position",
+            "options": "Junior Agent\nSenior Agent\nTeam Lead\nManager",
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "profile_picture",
+            "fieldtype": "Attach Image",
+            "label": "Profile Picture"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

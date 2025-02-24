@@ -1,0 +1,114 @@
+{
+    "name": "Appointment",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "allow_rename": 1,
+    "autoname": "format:APT-{####}",
+    "engine": "InnoDB",
+    "track_changes": 1,
+    "field_order": [
+        "lead_section",
+        "lead",
+        "customer_name",
+        "schedule_section",
+        "appointment_date",
+        "time",
+        "time_slot",
+        "status_section",
+        "status",
+        "qc_section",
+        "qc_time",
+        "qc_time_slot"
+    ],
+    "fields": [
+        {
+            "fieldname": "lead_section",
+            "fieldtype": "Section Break",
+            "label": "Lead Information"
+        },
+        {
+            "fieldname": "lead",
+            "fieldtype": "Link",
+            "label": "Lead",
+            "options": "Lead",
+            "reqd": 1
+        },
+        {
+            "fetch_from": "lead.customer_name",
+            "fieldname": "customer_name",
+            "fieldtype": "Data",
+            "label": "Customer Name",
+            "read_only": 1
+        },
+        {
+            "fieldname": "schedule_section",
+            "fieldtype": "Section Break",
+            "label": "Schedule"
+        },
+        {
+            "fieldname": "appointment_date",
+            "fieldtype": "Date",
+            "label": "Appointment Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "time",
+            "fieldtype": "Time",
+            "label": "Time",
+            "reqd": 1
+        },
+        {
+            "fieldname": "time_slot",
+            "fieldtype": "Select",
+            "label": "Time Slot",
+            "options": "9am - 12pm\n10am - 1pm\n11am - 2pm\n12pm - 3pm\n1pm - 4pm\n2pm - 5pm\n3pm - 6pm\n4pm - 7pm\n5pm - 8pm\n6pm - 9pm\n7pm - 10pm",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status_section",
+            "fieldtype": "Section Break",
+            "label": "Status"
+        },
+        {
+            "default": "Scheduled",
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "Scheduled\nCompleted\nCancelled",
+            "reqd": 1
+        },
+        {
+            "fieldname": "qc_section",
+            "fieldtype": "Section Break",
+            "label": "Quality Control"
+        },
+        {
+            "fieldname": "qc_time",
+            "fieldtype": "Time",
+            "label": "QC Time"
+        },
+        {
+            "fieldname": "qc_time_slot",
+            "fieldtype": "Select",
+            "label": "QC Time Slot",
+            "options": "9am - 12pm\n10am - 1pm\n11am - 2pm\n12pm - 3pm\n1pm - 4pm\n2pm - 5pm\n3pm - 6pm\n4pm - 7pm\n5pm - 8pm\n6pm - 9pm\n7pm - 10pm"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "print": 1,
+            "share": 1,
+            "report": 1,
+            "export": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_seen": 1
+}

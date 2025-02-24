@@ -1,0 +1,94 @@
+{
+  "name": "Address",
+  "doctype": "DocType",
+  "module": "Trg Marketing",
+  "fields": [
+    {
+      "fieldname": "address_line1",
+      "label": "Address Line 1",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "address_line2",
+      "label": "Address Line 2",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "city",
+      "label": "City",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "state",
+      "label": "State",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "county",
+      "label": "County",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "pincode",
+      "label": "PIN Code",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "country",
+      "label": "Country",
+      "fieldtype": "Link",
+      "options": "Country",
+      "reqd": 1
+    },
+    {
+      "fieldname": "full_address",
+      "label": "Full Address",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "validated_address",
+      "label": "Validated Address",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "geocoding_data",
+      "label": "Geocoding Data",
+      "fieldtype": "Long Text",
+      "description": "Contains latitude, longitude, and confidence data"
+    },
+    {
+      "fieldname": "lead",
+      "label": "Lead",
+      "fieldtype": "Link",
+      "options": "Lead"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "share": 1,
+      "report": 1,
+      "export": 1
+    }
+  ],
+  "search_fields": "address_line1, city, state, pincode, country",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "address_line1",
+  "track_changes": 1,
+  "track_views": 1,
+  "quick_entry": 1,
+  "allow_rename": 1,
+  "show_title_field_in_link": 1,
+  "allow_import": 1
+}

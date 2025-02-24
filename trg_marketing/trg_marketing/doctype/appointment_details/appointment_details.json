@@ -1,0 +1,35 @@
+{
+    "name": "Appointment Details",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "is_child": 1,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "appointment_datetime",
+            "label": "Appointment Date & Time",
+            "fieldtype": "Datetime",
+            "reqd": 1
+        },
+        {
+            "fieldname": "availability_confirmation",
+            "label": "Availability Confirmation",
+            "fieldtype": "Select",
+            "options": "\nConfirmed\nPending\nRescheduled"
+        },
+        {
+            "fieldname": "followup_notes",
+            "label": "Follow-up Notes",
+            "fieldtype": "Text Editor"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

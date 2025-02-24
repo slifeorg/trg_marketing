@@ -1,0 +1,30 @@
+{
+    "name": "Agent and Source",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "is_child": 1,
+    "istable": 1,
+    "fields": [
+        {
+            "fieldname": "agent_id",
+            "label": "Agent ID",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "agent_name",
+            "label": "Agent Name",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "source",
+            "label": "Source",
+            "fieldtype": "Select",
+            "options": "\nCold Call\nReferral\nWebsite"
+        },
+        {
+            "fieldname": "lead_creation_date",
+            "label": "Lead Creation Date",
+            "fieldtype": "Date"
+        }
+    ]
+}

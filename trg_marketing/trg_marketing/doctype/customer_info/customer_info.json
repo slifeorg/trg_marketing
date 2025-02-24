@@ -1,0 +1,38 @@
+{
+  "name": "Customer Info",
+  "doctype": "DocType",
+  "module": "Trg Marketing",
+  "fields": [
+    {
+      "fieldname": "homeowner_name",
+      "label": "Homeowner Name",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "contact_number",
+      "label": "Contact Number",
+      "fieldtype": "Phone"
+    },
+    {
+      "fieldname": "marital_status",
+      "label": "Marital Status",
+      "fieldtype": "Select",
+      "options": "\nSingle\nMarried\nDivorced"
+    },
+    {
+      "fieldname": "lead",
+      "label": "Lead",
+      "fieldtype": "Link",
+      "options": "Lead"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

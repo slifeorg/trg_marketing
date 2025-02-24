@@ -1,0 +1,70 @@
+{
+    "name": "Agent Statistics",
+    "doctype": "DocType",
+    "module": "Trg Marketing",
+    "autoname": "format:AGTS-{####}",
+    "search_fields": "agent",
+    "fields": [
+        {
+            "fieldname": "agent",
+            "fieldtype": "Link",
+            "label": "Agent",
+            "options": "Agent",
+            "reqd": 1,
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "finish_pending_leads_count",
+            "fieldtype": "Int",
+            "label": "Finish Pending Leads Count",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "leads_per_day",
+            "fieldtype": "Float",
+            "label": "Leads per Day",
+            "in_list_view": 1,
+            "precision": 2
+        },
+        {
+            "fieldname": "total_qc_count",
+            "fieldtype": "Int",
+            "label": "Total QC Count",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "qc_days_count",
+            "fieldtype": "Int",
+            "label": "QC Days Count"
+        },
+        {
+            "fieldname": "qc_per_day",
+            "fieldtype": "Float",
+            "label": "QC per Day",
+            "precision": 2
+        },
+        {
+            "fieldname": "rating",
+            "fieldtype": "Float",
+            "label": "Rating",
+            "in_list_view": 1,
+            "precision": 1
+        },
+        {
+            "fieldname": "average_qc_time",
+            "fieldtype": "Float",
+            "label": "Average QC Time",
+            "precision": 2
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "actions": [],
+  "creation": "2024-02-16 20:46:54.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "salesman",
+    "salesman_name",
+    "status",
+    "assigned_on",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "salesman",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Salesman",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fetch_from": "salesman.full_name",
+      "fieldname": "salesman_name",
+      "fieldtype": "Data",
+      "label": "Salesman Name",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Status",
+      "options": "Active\nInactive\nCompleted",
+      "default": "Active"
+    },
+    {
+      "fieldname": "assigned_on",
+      "fieldtype": "Datetime",
+      "in_list_view": 1,
+      "label": "Assigned On",
+      "default": "now"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "istable": 1,
+  "links": [],
+  "modified": "2024-02-16 20:46:54.000000",
+  "modified_by": "Administrator",
+  "module": "Trg Marketing",
+  "name": "Lead Salesman",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

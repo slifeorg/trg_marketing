@@ -1,0 +1,48 @@
+{
+  "name": "Base Integration",
+  "doctype": "DocType",
+  "module": "Trg Integrations",
+  "is_abstract": 1,
+  "fields": [
+    {
+      "fieldname": "integration_id",
+      "label": "Integration ID",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "api_key",
+      "label": "API Key",
+      "fieldtype": "Password",
+      "reqd": 1
+    },
+    {
+      "fieldname": "enabled",
+      "label": "Enabled",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "api_response",
+      "label": "API Response",
+      "fieldtype": "Long Text",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_sync",
+      "label": "Last Sync",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
