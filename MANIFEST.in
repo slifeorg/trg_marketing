@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include trg_marketing *.css
+recursive-include trg_marketing *.csv
+recursive-include trg_marketing *.html
+recursive-include trg_marketing *.ico
+recursive-include trg_marketing *.js
+recursive-include trg_marketing *.json
+recursive-include trg_marketing *.md
+recursive-include trg_marketing *.png
+recursive-include trg_marketing *.py
+recursive-include trg_marketing *.svg
+recursive-include trg_marketing *.txt
+recursive-exclude trg_marketing *.pyc

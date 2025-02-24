@@ -1,0 +1,54 @@
+{
+  "name": "Geolocation Settings",
+  "doctype": "DocType",
+   "module": "Trg Marketing",
+  "fields": [
+    {
+      "fieldname": "enable_address_autocompletion",
+      "label": "Enable Address Autocompletion",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "provider",
+      "label": "Primary Provider",
+      "fieldtype": "Select",
+      "options": "\nGeoapify\nHERE\nNomatim\nGoogle\nShipEngine\nBridgeData"
+    },
+    {
+      "fieldname": "fallback_provider",
+      "label": "Fallback Provider",
+      "fieldtype": "Select",
+      "options": "\nGeoapify\nHERE\nNomatim\nGoogle\nShipEngine\nBridgeData"
+    },
+    {
+      "fieldname": "api_keys_section",
+      "fieldtype": "Section Break",
+      "label": "API Keys"
+    },
+    {
+      "fieldname": "geoapify_api_key",
+      "label": "Geoapify API Key",
+      "fieldtype": "Password"
+    },
+    {
+      "fieldname": "here_api_key",
+      "label": "HERE API Key",
+      "fieldtype": "Password"
+    },
+    {
+      "fieldname": "google_api_key",
+      "label": "Google API Key",
+      "fieldtype": "Password"
+    },
+    {
+      "fieldname": "shipengine_api_key",
+      "label": "ShipEngine API Key",
+      "fieldtype": "Password"
+    },
+    {
+      "fieldname": "bridgedata_api_key",
+      "label": "BridgeData API Key",
+      "fieldtype": "Password"
+    }
+  ]
+}

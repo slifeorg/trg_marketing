@@ -4,22 +4,23 @@ app_publisher = "slife"
 app_description = "TRG Marketing"
 app_email = "info@slife.guru"
 app_license = "mit"
+app_icon = "octicon octicon-file-directory"
 
 # Apps
-# ------------------
+add_to_apps_screen = [
+    {
+        "name": "trg_marketing",
+        "logo": "/assets/trg_marketing/images/desk.png",
+        "title": "TRG Marketing",
+        "route": "/trg_marketing",
+        "has_permission": "trg_marketing.api.permission.has_app_permission"
+    }
+]
 
-# required_apps = []
-
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "trg_marketing",
-# 		"logo": "/assets/trg_marketing/logo.png",
-# 		"title": "Trg Marketing",
-# 		"route": "/trg_marketing",
-# 		"has_permission": "trg_marketing.api.permission.has_app_permission"
-# 	}
-# ]
+# Patches
+patches = [
+    "trg_marketing.trg_marketing.patches.create_marketing_settings"
+]
 
 # Includes in <head>
 # ------------------
@@ -47,6 +48,13 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": {"module":"Trg Marketing"}  # An empty filter means no restrictions.
+    }
+]
 
 # Svg Icons
 # ------------------
@@ -239,7 +247,7 @@ app_license = "mit"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
-# export_python_type_annotations = True
+export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
