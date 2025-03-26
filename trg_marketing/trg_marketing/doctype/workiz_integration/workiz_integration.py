@@ -9,6 +9,18 @@ import json
 from trg_marketing.trg_integrations.doctype.base_integration.base_integration import BaseIntegration
 
 class WorkizIntegration(BaseIntegration):
+	# begin: auto-generated types
+	# This code is auto-generated. Do not modify anything in this block.
+
+	from typing import TYPE_CHECKING
+
+	if TYPE_CHECKING:
+		from frappe.types import DF
+
+		lead: DF.Link | None
+		workiz_uuid: DF.Data | None
+	# end: auto-generated types
+
 	def validate(self):
 		super().validate()
 		self.validate_uuid()

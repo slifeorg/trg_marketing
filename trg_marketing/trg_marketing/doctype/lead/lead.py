@@ -4,6 +4,21 @@ from frappe.utils import validate_phone_number
 
 class Lead(Document):
     def validate(self):
+        # Validate that all linked DocTypes exist
+        link_doctypes = [
+            "Workiz Integration",
+            "Lead Source",
+            "Zipcode",
+            "Property Details",
+            "Customer Info",
+            "Lead Salesman",
+            "Agent and Source"
+        ]
+        
+        for doctype in link_doctypes:
+            if not frappe.db.exists("DocType", doctype):
+                frappe.throw(_(f"DocType {doctype} does not exist. Please create it first."))
+        
         self.validate_phone_numbers()
         self.validate_state()
         self.validate_salesmen()
