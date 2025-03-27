@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { FrappeUI, Button, FeatherIcon } from 'frappe-ui'
 import { createPinia } from 'pinia'
-import router from './router'
+//import router from './router'
 import App from './App.vue'
 //import './index.css'
 

@@ -12,5 +12,3 @@
 //   history: createWebHistory(),
 //   routes
 // })
-
-// export default router
