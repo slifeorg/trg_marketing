@@ -1,0 +1,68 @@
+body[data-route="List/Appointment/List"] {
+    background:
+        radial-gradient(circle at 160px 857px, var(--gradient-color-1), var(--gradient-color-2) calc(528px * 0.6)),
+        radial-gradient(circle at 1510px 110px, var(--gradient-color-1), var(--gradient-color-2) calc(632px * 0.6)),
+        var(--light-periwinkle) !important;
+
+
+    .btn.btn-primary {
+        background-color: var(--deep-royal-blue);
+    }
+
+    .page-head, .page-container, .navbar, .form-page {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .page-head-content {
+        height: fit-content !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    .layout-side-section.right {
+        display: none !important;
+    }
+
+    .page-form {
+        height: 0;
+        overflow: hidden;
+        background-color: transparent !important;
+    }
+
+    .list-row-col.ellipsis.list-subject.level span:last-child {
+        display: none;
+    }
+
+    .title-text {
+        font-size: 36px !important;
+        font-weight: 700 !important;
+    }
+
+    .list-row-col * {
+        font-weight: 700 !important;
+        color: var(--black) !important;
+    }
+
+    .list-row {
+        background-color: var(--white);
+        padding: 27px 20px 26px 0px !important;
+    }
+
+    .list-subject {
+        margin: 0 12px;
+        flex: unset !important;
+    }
+
+    .list-paging-area.level {
+        display: none !important;
+    }
+
+    button[data-label="Add Appointment"] {
+        padding: 15px 50px !important;
+        font-size: 18px;
+        border-radius: 30px;
+        font-weight: 500;
+        height: fit-content !important;
+    }
+}
