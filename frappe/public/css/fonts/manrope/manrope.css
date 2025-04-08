@@ -1,0 +1,15 @@
+@font-face {
+	font-family: ManropeVariable;
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url("/assets/frappe/css/fonts/manrope/Manrope-VariableFont_wght.ttp") format("truetype");
+  }
+  /* static fonts */
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 200; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-ExtraLight.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 300; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-Light.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 500; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-Medium.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-SemiBold.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 700; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-Bold.ttf") format("truetype"); }
+  @font-face { font-family: "Manrope"; font-style: normal; font-weight: 800; font-display: swap; src: url("/assets/frappe/css/fonts/manrope/Manrope-ExtraBold.ttf") format("truetype"); }
