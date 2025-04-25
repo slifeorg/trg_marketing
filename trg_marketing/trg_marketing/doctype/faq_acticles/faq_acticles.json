@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:header",
+ "creation": "2025-04-25 14:43:45.772134",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "header",
+  "content",
+  "categories",
+  "permission_tab",
+  "role"
+ ],
+ "fields": [
+  {
+   "fieldname": "header",
+   "fieldtype": "Data",
+   "label": "Header",
+   "unique": 1
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "label": "Content"
+  },
+  {
+   "fieldname": "permission_tab",
+   "fieldtype": "Tab Break",
+   "label": "Permission"
+  },
+  {
+   "fieldname": "categories",
+   "fieldtype": "Table MultiSelect",
+   "label": "Categories",
+   "options": "FAQ Category Link"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Table",
+   "label": "Role",
+   "options": "Has Role"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-25 15:21:22.672518",
+ "modified_by": "Administrator",
+ "module": "Trg Marketing",
+ "name": "FAQ Acticles",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
