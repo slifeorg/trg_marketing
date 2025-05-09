@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class FAQActicles(Document):
+class FAQArticles(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2025, slife and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("FAQ Acticles", {
+frappe.ui.form.on("FAQ Articles", {
 	refresh(frm) {
 		$(`.btn[data-label="Save"]`).prepend($(`
 			<svg class="save-icon" aria-hidden="true">
@@ -11,7 +11,7 @@ frappe.ui.form.on("FAQ Acticles", {
 
 		if (!frm.is_new()) {
 			frm.add_custom_button(__("Compare Versions"), () => {
-				new frappe.ui.DiffView("FAQ Acticles", "content", frm.doc.name);
+				new frappe.ui.DiffView("FAQ Articles", "content", frm.doc.name);
 			});
 		}
 
