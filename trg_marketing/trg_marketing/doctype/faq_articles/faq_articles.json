@@ -6,9 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_info",
   "header",
-  "content",
+  "status",
+  "author",
   "categories",
+  "section_edit",
+  "content",
   "permission_tab",
   "role"
  ],
@@ -40,12 +44,35 @@
    "fieldtype": "Table",
    "label": "Role",
    "options": "Has Role"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nNew\nRead"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Author",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_info",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_edit",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-25 15:21:22.672518",
+ "modified": "2025-05-20 14:30:45.521972",
  "modified_by": "Administrator",
  "module": "Trg Marketing",
  "name": "FAQ Articles",

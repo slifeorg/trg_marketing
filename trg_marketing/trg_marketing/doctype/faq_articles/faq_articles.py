@@ -16,10 +16,12 @@ class FAQArticles(Document):
 		from frappe.types import DF
 		from trg_marketing.trg_marketing.doctype.faq_category_link.faq_category_link import FAQCategoryLink
 
+		author: DF.Link | None
 		categories: DF.TableMultiSelect[FAQCategoryLink]
 		content: DF.TextEditor | None
 		header: DF.Data | None
 		role: DF.Table[HasRole]
+		status: DF.Literal["Draft", "New", "Read"]
 	# end: auto-generated types
 
 	pass
