@@ -1,9 +1,14 @@
 {
  "app": "trg_marketing",
  "charts": [],
- "content": "[{\"id\":\"THC5DriBxI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"THC5DriBxI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"7ZDr8jRg0e\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"LeafletMap\",\"col\":12}}]",
  "creation": "2025-04-22 14:38:39.034971",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "LeafletMap",
+   "label": "LeafletMap"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -15,7 +20,7 @@
  "label": "Dashboard",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-04-25 14:23:39.255051",
+ "modified": "2025-06-03 22:50:05.523084",
  "modified_by": "Administrator",
  "module": "Trg Marketing",
  "name": "Dashboard",

@@ -35,7 +35,6 @@ frappe.ui.form.on('Appointment', {
 				$(input).data('geocoder', geocoder);
 				$(input).data('suggestions', suggestionsContainer);
 			}
-			console.log("Geocoder inzialized");
 		}).catch(() => {
 			console.error("Error initializing geocoder");
 		});
@@ -110,7 +109,6 @@ async function initGeocoder() {
 			if (typeof L !== 'undefined' && typeof L.Control.Geocoder === 'undefined') {
 				$.getScript('https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js')
 					.done(function() {
-						console.log('Control.Geocoder loaded');
 						resolve();
 					})
 					.fail(function(err) {
